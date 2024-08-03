@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  
+    font-size: 18px;
+    font-weight: 600;
+}
+  
+.button {
+    width: 100px;
+    padding: 4px 8px;
+    border: 1px solid #ad865a;
+    border-radius: 15px;
+    margin: 0 auto;
+  
+    background-color: #cfb599;
+    font-size: 16px;
+    transition: background-color 250ms ease-in;
+}
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      gap: 36px;
+    }
+}
+  
+  @media screen and (min-width: 1240px) {
+    .button:hover,
+    .button:focus {
+      background-color: #be9d79;
+    }
+}
